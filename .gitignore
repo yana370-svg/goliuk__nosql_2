@@ -1,0 +1,51 @@
+# === Безпека та секрети ===
+.env
+.env.local
+.env.*.local
+
+# === Віртуальне оточення Python ===
+.venv/
+venv/
+ENV/
+env/
+bin/
+lib/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+
+# === Кеш Python та компіляції ===
+**/__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+
+# === Датасети та важкі бінарні файли (Критично важливо!) ===
+# Ігноруємо сирий гігабайтний JSON-файл ArXiv
+arxiv-metadata-oai-snapshot.json
+# Ігноруємо локальну папку з Parquet-сабсетами
+data/
+# Ігноруємо збережені NumPy матриці векторів
+embeddings/
+*.npy
+*.parquet
+*.zip
+*.tar.gz
+
+# === Кэш моделей Hugging Face (якщо випадково створили в проєкті) ===
+.cache/
+hf_cache/
+
+# === Системні файли та налаштування IDE ===
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+ Thumbs.db
+Desktop.ini
+
